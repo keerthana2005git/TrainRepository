@@ -12,6 +12,18 @@ app:
     refresh-token-expiration-ms: 604800000
 
 spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: abulhasanrathinamohamed@gmail.com
+    password: ilndssotbvbcbwmv
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
   rabbitmq:
     host: ${RABBITMQ_HOST:localhost}
     port: ${RABBITMQ_PORT:5672}
