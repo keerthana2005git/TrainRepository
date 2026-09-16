@@ -19,3 +19,18 @@ spring:
         dialect: org.hibernate.dialect.MySQLDialect
   flyway:
     enabled: false
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      reservationService:
+        slidingWindowSize: 10
+        minimumNumberOfCalls: 5
+        failureRateThreshold: 50
+        waitDurationInOpenState: 5s
+        permittedNumberOfCallsInHalfOpenState: 3
+  retry:
+    instances:
+      reservationService:
+        maxAttempts: 3
+        waitDuration: 500ms
