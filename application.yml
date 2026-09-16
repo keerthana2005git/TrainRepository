@@ -7,7 +7,7 @@ eureka:
 
 app:
   jwt:
-    secret: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+    secret: RailwayReservationKeerthana2026SecretKey123456789
     access-token-expiration-ms: 86400000
     refresh-token-expiration-ms: 604800000
 
@@ -15,8 +15,8 @@ spring:
   mail:
     host: smtp.gmail.com
     port: 587
-    username: abulhasanrathinamohamed@gmail.com
-    password: ilndssotbvbcbwmv
+    username: jayaganeshkeerthana@gmail.com
+    password: gfbg wxwt pbou fpys
     properties:
       mail:
         smtp:
